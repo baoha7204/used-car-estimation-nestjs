@@ -1,0 +1,25 @@
+### Sign up
+POST http://localhost:3000/auth/signup
+content-type: application/json
+
+{
+    "email": "baoha36@gmail.com",
+    "password": "123"
+}
+
+### Find a user with given id
+GET http://localhost:3000/auth/2
+
+### Find users with given email
+GET http://localhost:3000/auth?email=baoha3604@gmail.com
+
+### Update user with given id
+PATCH  http://localhost:3000/auth/3
+content-type: application/json
+
+{
+    "password": "123"
+}
+
+### Remove user with given id
+DELETE   http://localhost:3000/auth/4
