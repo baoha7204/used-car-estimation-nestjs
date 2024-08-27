@@ -16,6 +16,9 @@ export class UsersService {
   }
 
   findOne(id: number) {
+    if (!id) {
+      throw new NotFoundException('Invalid identifier');
+    }
     return this.repo.findOneBy({ id });
   }
 
