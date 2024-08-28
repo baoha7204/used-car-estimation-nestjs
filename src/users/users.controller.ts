@@ -18,8 +18,8 @@ import { CreateUserDto } from './dtos/create-user.dto';
 import { UpdateUserDto } from './dtos/update-user.dto';
 import { UserDto } from './dtos/user.dto';
 import { CurrentUser } from './decorators/current-user.decorator';
-import { Serialize } from 'src/interceptors/serialize.interceptor';
-import { AuthGuard } from 'src/guards/auth.guard';
+import { Serialize } from '../interceptors/serialize.interceptor';
+import { AuthGuard } from '../guards/auth.guard';
 
 @Serialize(UserDto)
 @Controller('auth')
