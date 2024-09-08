@@ -5,20 +5,20 @@ content-type: application/json
 {
     "make": "Ford",
     "model": "Ranger",
-    "year": 2020,
-    "mileage": 100,
+    "year": 2023,
+    "mileage": 500,
     "lng": 0,
-    "lat": 17,
-    "price": 50000
+    "lat": 15,
+    "price": 45250
 }
 
 ### Get report with queries
 GET http://localhost:3000/reports?make=Ford&model=Ranger&year=2020&mileage=100&lng=0&lat=17.5
  
 ### Approve a report
-PATCH http://localhost:3000/reports/1
+PATCH http://localhost:3000/reports/5
 content-type: application/json
 
 {
-    "approved": false
+    "approved": true
 }
