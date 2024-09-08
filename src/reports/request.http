@@ -3,11 +3,22 @@ POST http://localhost:3000/reports
 content-type: application/json
 
 {
-    "make": "Honda",
-    "model": "Civic",
-    "year": 2024,
+    "make": "Ford",
+    "model": "Ranger",
+    "year": 2020,
     "mileage": 100,
     "lng": 0,
     "lat": 17,
     "price": 50000
+}
+
+### Get report with queries
+GET http://localhost:3000/reports?make=Ford&model=Ranger&year=2020&mileage=100&lng=0&lat=17.5
+ 
+### Approve a report
+PATCH http://localhost:3000/reports/1
+content-type: application/json
+
+{
+    "approved": false
 }
