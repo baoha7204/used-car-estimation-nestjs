@@ -1,0 +1,13 @@
+### Create a report
+POST http://localhost:3000/reports
+content-type: application/json
+
+{
+    "make": "Honda",
+    "model": "Civic",
+    "year": 2024,
+    "mileage": 100,
+    "lng": 0,
+    "lat": 17,
+    "price": 50000
+}
