@@ -20,7 +20,7 @@ export class User {
 
   @AfterInsert()
   logInsert() {
-    console.log('Inserted User with id', this.id);
+    console.log('Inserted User with id', this.id, this.email);
   }
 
   @AfterUpdate()
