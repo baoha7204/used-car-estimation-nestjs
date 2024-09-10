@@ -31,6 +31,9 @@ switch (process.env.NODE_ENV) {
       url: process.env.DATABASE_URL,
       entities: ['dist/**/*.entity{.ts,.js}'],
       autoLoadEntities: true,
+      ssl: {
+        rejectUnauthorized: false,
+      },
     });
     break;
   default:
